@@ -3,7 +3,7 @@ import { capitalize } from '@/utils';
 
 import HomeView from '@/views/HomeView.vue';
 
-export const sections = ['acceuil', 'histoire', 'infos'];
+export const sections = ['acceuil', 'histoire', 'infos', 'contacte'];
 
 const routes = [
   {

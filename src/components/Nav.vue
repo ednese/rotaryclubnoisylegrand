@@ -117,6 +117,7 @@
       pointer-events none
       border-radius rem(4)
       transition 300ms transform, opacity 300ms
+      box-shadow 0px rem(8) rem(64) rgba(0,0,0,.4)
 
     &__route p
       color #2b4f93
@@ -132,6 +133,12 @@
         opacity 1
         pointer-events auto
         transform translate(-50%, 32px)
+
++media-down(640)
+  .Nav__routes
+    flex-direction column
+  .Nav__route:not(:first-child)
+    margin-top rem(16)
 </style>
 
 <script setup lang="ts">

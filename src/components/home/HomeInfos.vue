@@ -73,8 +73,6 @@
 </style>
 
 <script setup lang="ts">
-import { computed } from 'vue';
-
 const infos = [
   {
     name: 'Lieu de réunion',
@@ -93,7 +91,7 @@ const infos = [
     icon: 'newspaper',
   },
   {
-    name: 'Contact',
+    name: 'Contacte',
     text: `Nous sommes joignables sur l'adresse email:\n"contact@rotaryclubnoisylegrand.org"`,
     url: 'mailto:contact@rotaryclubnoisylegrand.org',
     icon: 'envelope',

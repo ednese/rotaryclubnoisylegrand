@@ -35,6 +35,7 @@
 
   --color-heading: var(--vt-c-text-light-1);
   --color-text: #2b4f93;
+  --color-text--hover: #3464bd;
 
   --section-gap: 160px;
 }
