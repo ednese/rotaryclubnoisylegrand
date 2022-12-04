@@ -42,6 +42,8 @@
   flex-direction column
   justify-content center
   align-items center
+  +media-down(640)
+    height 90vh
 
   &__title
     user-select none
