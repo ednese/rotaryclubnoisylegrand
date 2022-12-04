@@ -1,6 +1,6 @@
 <template>
   <div class="HomeContact" id="contact">
-    <h3 class="homeHistory__title">Contacte</h3>
+    <h3 class="homeHistory__title">Contact</h3>
     <form class="HomeContact__form" @submit="sendEmail">
       <div class="HomeContact__form__inputs">
         <Input
@@ -112,7 +112,8 @@ const {
   VITE_EMAILJS_TEMPLATE_ID,
   VITE_EMAILJS_SERVICE_ID,
 } = import.meta.env;
-function sendEmail(e) {
+
+function sendEmail(e: any) {
   e.preventDefault();
   try {
     emailjs.send(

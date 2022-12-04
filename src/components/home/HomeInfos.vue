@@ -90,11 +90,11 @@ const infos = [
     url: 'https://www.facebook.com/rotaryclubnoisylegrand',
     icon: 'newspaper',
   },
-  {
-    name: 'Contacte',
-    text: `Nous sommes joignables sur l'adresse email:\n"contact@rotaryclubnoisylegrand.org"`,
-    url: 'mailto:contact@rotaryclubnoisylegrand.org',
-    icon: 'envelope',
-  },
+  // {
+  //   name: 'Contacte',
+  //   text: `Nous sommes joignables sur l'adresse email:\n"contact@rotaryclubnoisylegrand.org"`,
+  //   url: 'mailto:contact@rotaryclubnoisylegrand.org',
+  //   icon: 'envelope',
+  // },
 ]
 </script>
