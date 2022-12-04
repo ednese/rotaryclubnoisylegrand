@@ -2,7 +2,7 @@
 <div class="HomeInfos" id="infos">
   <h3 class="HomeInfos__title">Informations</h3>
   <div class="HomeInfos__content">
-    <img class="HomeInfos__content__image" src="images/home/novotel.jpg"/>
+    <img class="HomeInfos__content__image" src="/images/home/novotel.jpg"/>
     <div class="HomeInfos__content__infos">
       <div class="HomeInfos__content__info" v-for="info in infos" :key="info.name">
         <a :href="info?.url" target="_blank">

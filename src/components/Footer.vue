@@ -15,7 +15,7 @@
         <p class="Footer__copyright">© {{ new Date().getFullYear() }} Rotary Club de Noisy-le-Grand. All rights reserved.</p>
         <div class="Footer__author"><a class="Footer__author" href="https://evansende.com" target="_blank">Integrated by Evan Sende</a></div>
       </div>
-      <RouterLink to="/"><img class="Footer__logo" src="images/logo.png" /></RouterLink>
+      <RouterLink to="/"><img class="Footer__logo" src="/images/logo.png" /></RouterLink>
     </div>
   </div>
 </template>

@@ -161,7 +161,7 @@ function updateImageIndex(number: number) {
 
 function getBackgroundImage(index: number) {
   return {
-    backgroundImage: `url(images/home/${index}.jpg)`,
+    backgroundImage: `url(/images/home/${index}.jpg)`,
     opacity: selectedImageIndex.value === index ? 1 : 0,
     '--background-position':
       selectedImageIndex.value === 1

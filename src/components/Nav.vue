@@ -1,7 +1,7 @@
 <template>
   <div class="Nav" :class="navClass">
     <RouterLink class="Nav__logo" to="/"
-      ><img :src="`images/logo${hasBackground ? '' : '-white'}.png`"
+      ><img :src="`/images/logo${hasBackground ? '' : '-white'}.png`"
     /></RouterLink>
     <div
       class="Nav__burger"
