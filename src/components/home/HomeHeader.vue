@@ -1,5 +1,5 @@
 <template>
-  <div class="HomeHeader" id="acceuil">
+  <div class="HomeHeader" id="accueil">
     <div class="HomeHeader__controls">
       <div class="HomeHeader__controls__progress" />
       <div class="HomeHeader__controls__content">
