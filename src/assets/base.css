@@ -65,6 +65,10 @@ a {
   transition: ease color .3s;
 }
 
+b {
+  font-weight: 700;
+}
+
 *,
 *::before,
 *::after {
