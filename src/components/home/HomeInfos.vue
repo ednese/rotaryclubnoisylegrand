@@ -2,17 +2,15 @@
 <div class="HomeInfos" id="infos">
   <h3 class="HomeInfos__title">Informations</h3>
   <div class="HomeInfos__content">
-    <img class="HomeInfos__content__image" src="/images/home/novotel.jpg"/>
+    <img class="HomeInfos__content__image" src="/images/home/novotel-rotary.jpg"/>
     <div class="HomeInfos__content__infos">
       <div class="HomeInfos__content__info" v-for="info in infos" :key="info.name">
-        <a :href="info?.url" target="_blank">
-          <font-awesome-icon
-            class="HomeInfos__content__info__icon"
-            :icon="['fas', info.icon]"
-          />
-          <h4 class="HomeInfos__content__info__name">{{info.name}}</h4>
-          <p class="HomeInfos__content__info__text">{{info.text}}</p>
-        </a>
+        <font-awesome-icon
+          class="HomeInfos__content__info__icon"
+          :icon="['fas', info.icon]"
+        />
+        <h4 class="HomeInfos__content__info__name">{{info.name}}</h4>
+        <p class="HomeInfos__content__info__text" v-html="info.text" />
       </div>
     </div>
   </div>
@@ -38,8 +36,9 @@
     +media-down(1024)
       flex-direction column
     &__image
+      max-width rem(720)
       +media-down(1580)
-        max-width 60%
+        max-width 50%
       +media-down(1024)
         max-width 100%
 
@@ -68,6 +67,8 @@
           font-size rem(18)
       &__text
         font-size rem(16)
+        a
+          text-decoration underline
         +media-down(640)
           font-size rem(14)
 </style>
@@ -75,19 +76,25 @@
 <script setup lang="ts">
 const infos = [
   {
-    name: 'Lieu de réunion',
-    text: 'Hôtel Novotel Marne-la-Vallée 2,\nallée Bienvenue 93160, NOISY-LE-GRAND',
+    name: 'Adresse postale',
+    text: `Hôtel Novotel Marne-la-Vallée 2,
+            allée Bienvenue 93160, NOISY-LE-GRAND
+            <a href="tel:+33180000000">Tel 01.80.00.00.00</a>
+    `,
     icon: 'map-location-dot',
   },
   {
     name: 'Dates',
-    text: 'Réunion tous les jeudis à 20h00\nRéunion statutaire les 1er et 3ème jeudis du mois',
+    text: `Tous les jeudis à 20h00
+            En présentiel au Novotel ou à la Maison des Associations
+            En visioconférence le 3ème jeudi du mois
+            N'hésitez pas à <a href="#contact">nous contacter</a>
+    `,
     icon: 'calendar-days',
   },
   {
-    name: 'Actualitées',
-    text: 'Retrouvez notre actualité sur FACEBOOK',
-    url: 'https://www.facebook.com/rotaryclubnoisylegrand',
+    name: 'Actualités',
+    text: 'Retrouvez notre actualité sur <a href="https://www.facebook.com/rotaryclubnoisylegrand" target="_blank">FACEBOOK</a>',
     icon: 'newspaper',
   },
   // {
