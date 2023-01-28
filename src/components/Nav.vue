@@ -53,6 +53,9 @@
       &:before
         transform rotate(-45deg) translateY(-500%)
 
+  .Nav__route > p
+      font-size rem(20)
+
   &--background
     background #fff
     box-shadow 0px rem(8) rem(64) rgba(0,0,0,.2)
